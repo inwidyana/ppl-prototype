@@ -50,6 +50,21 @@ Route::post('/category', 'CategoryController@store')->name('category.store');
 
 Route::get('/category/budget', 'CategoryController@budget')->name('category.budget');
 
+/*
+ * KIPAK ROUTES.
+ */
+Route::get('/category/makeup', 'CategoryController@makeup')->name('makeup.budget');
+
+Route::get('/category/gas', 'CategoryController@gas')->name('gas.budget');
+
+Route::get('/category/shopping', 'CategoryController@shopping')->name('shopping.budget');
+
+Route::get('/category/food', 'CategoryController@food')->name('food.budget');
+
+Route::get('/category/groceries', 'CategoryController@groceries')->name('groceries.budget');
+
+Route::get('/category/phone', 'CategoryController@phone')->name('phone.budget');
+
 Route::post('/category/budget', 'CategoryController@budgetStore')->name('category.budget.store');
 
 

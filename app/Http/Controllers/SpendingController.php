@@ -9,8 +9,9 @@ use Illuminate\Support\Facades\Auth;
 class SpendingController extends Controller
 {
     public function create(Request $request) {
-        $categories = Category::where('user_id', Auth::id())->get();
-        return view('spending.create', ['categories' => $categories]);
+//        $categories = Category::where('user_id', Auth::id())->get();
+//        return view('spending.create', ['categories' => $categories]);
+        return view('spending.index');
     }
 
     public function store(Request $request) {

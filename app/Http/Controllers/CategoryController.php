@@ -43,4 +43,28 @@ class CategoryController extends Controller
         }
         return redirect('profile');
     }
+
+    public function makeup(Request $request) {
+        return view('category.budget', ['category' => 'Make Up', 'next' => 'gas.budget']);
+    }
+
+    public function gas(Request $request) {
+        return view('category.budget', ['category' => 'Gas', 'next' => 'shopping.budget']);
+    }
+
+    public function shopping(Request $request) {
+        return view('category.budget', ['category' => 'Shopping', 'next' => 'food.budget']);
+    }
+
+    public function food(Request $request) {
+        return view('category.budget', ['category' => 'Food', 'next' => 'groceries.budget']);
+    }
+
+    public function groceries(Request $request) {
+        return view('category.budget', ['category' => 'Groceries', 'next' => 'phone.budget']);
+    }
+
+    public function phone(Request $request) {
+        return view('category.budget', ['category' => 'Phone', 'next' => 'dontforget.create']);
+    }
 }

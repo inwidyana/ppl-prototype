@@ -40,7 +40,7 @@
                 <h1>Aflah <br>Widyana</h1>
                 <p>member since October 2018</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, architecto commodi delectus.</p>
-                <p><a>My Budget</a> | <a><strong>My Profile</strong></a></p>
+                <p><a href="{{ route('budget.create') }}">My Budget</a> | <a><strong>My Profile</strong></a></p>
             </div>
         </div>
     </div>

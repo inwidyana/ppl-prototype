@@ -7,11 +7,11 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css')  }}">
-    <link rel="stylesheet" href="{{ asset('css/categories.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/whats_your_budget.css') }}">
 
     <title>Budgeting App</title>
 </head>
-<body background="Landing%20Page/Landing%20Page%20Background.png">
+<body background="{{ asset('landing_page_background.png') }}">
 
 <nav class="navbar navbar-expand-lg navbar-dark mt-3 mx-5">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,38 +35,19 @@
 
 <div class="container">
     <div class="billboard">
-        <h1>Choose categories to <div></div>allocate your budget</h1>
-        <div class="row">
-            <div class="col">
-                <button class="btn btn-light btn-lg btn-block button-text">Make Up</button>
-            </div>
-            <div class="col">
-                <button class="btn btn-light btn-lg btn-block button-text">Gas</button>
-            </div>
-            <div class="col">
-                <button class="btn btn-light btn-lg btn-block button-text">Shopping</button>
-            </div>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col">
-                <button class="btn btn-light btn-lg btn-block button-text">Food</button>
-            </div>
-            <div class="col">
-                <button class="btn btn-light btn-lg btn-block button-text">Groceries</button>
-            </div>
-            <div class="col">
-                <button class="btn btn-light btn-lg btn-block button-text">Phone Bills</button>
-            </div>
-        </div>
-    </div>
+        <h1>What is your budget for {{ $category }} ?</h1>
+        <form method="POST" action="{{ route('budget.store') }}" enctype="multipart/form-data">
+            @csrf
 
-    <div class="text-right next-button">
-        <button><a style="color: dimgray;" href="{{ route('wouldyou.create') }}">Back</a></button>
-        <button><a style="color: dimgray;" href="{{ route('wouldyou.create') }}">Add Category</a></button>
-        <button type="submit"><a style="color: dimgray;" href="{{ route('makeup.budget') }}">Next</a></button>
-    </div>
+            <input type="number" name="budget"><br>
 
+            <div class="text-right next-button">
+                <button><a style="color: dimgray;" href="{{ route('profile') }}">Back</a></button>
+                <button><a style="color: dimgray;" href="{{ route($next) }}">Next</a></button>
+                {{--<button type="submit"><a style="color: dimgray;" href="{{ route('wouldyou.create') }}">Next</a></button>--}}
+            </div>
+        </form>
+    </div>
 </div>
 
 <footer class="lowest-footer text-center">
