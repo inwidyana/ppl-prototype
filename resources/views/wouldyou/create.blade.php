@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/myprofile.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css')  }}">
+    <link rel="stylesheet" href="{{ asset('css/wouldyoulike.css') }}">
 
     <title>Budgeting App</title>
 </head>
-<body background="{{ asset('landing_page_background.png') }}">
+<body background="Landing%20Page/Landing%20Page%20Background.png">
 
 <nav class="navbar navbar-expand-lg navbar-dark mt-3 mx-5">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,7 +26,7 @@
                 <a class="nav-link mx-3 px-5 py-3" href="#">Blog</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link mx-3 px-5 py-3" href="{{ route('budget.create') }}">Add a Spending</a>
+                <a class="nav-link mx-3 px-5 py-3" href="#">Add a Spending</a>
             </li>
         </ul>
     </div>
@@ -34,43 +34,17 @@
 </nav>
 
 <div class="container">
-    <div class="cover">
-        <div class="row">
-            <div class="col-sm-6">
-                <h1>Aflah <br>Widyana</h1>
-                <p>member since October 2018</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, architecto commodi delectus.</p>
-                <p><a>My Budget</a> | <a><strong>My Profile</strong></a></p>
-            </div>
-        </div>
+    <div class="billboard">
+        <h1>Would you like to budget<div></div>budget each category</h1>
+        <button class="btn btn-light btn-lg btn-block button-text">Yes</button>
+        <button class="btn btn-light btn-lg btn-block button-text">No</button>
     </div>
 
-    <div class="basic-information">
-        <h1>Basic Information</h1>
-        <div class="row">
-            <div class="col-sm-2">
-                <h5>First Name</h5>
-                <p>Aflah</p>
-            </div>
-            <div class="col-sm-2">
-                <h5>Last Name</h5>
-                <p>Widyana</p>
-            </div>
-        </div>
-        <h5>E-mail</h5>
-        <p>loremipsum@ugm.ac.id</p>
-        <input type="radio"><label class="mx-3">Subscribe to Budgeting App Daily Newsletter</label>
+    <div class="text-right next-button">
+        <button><a style="color: dimgray;" href="{{ route('budget.create') }}">Back</a></button>
+        <button type="submit"><a style="color: dimgray;" href="{{ route('category.create') }}">Next</a></button>
     </div>
 
-    <div class="privacy">
-        <h1>Privacy and Security</h1>
-        <h5>Password</h5>
-        <p>*********************</p>
-        <h5>Secondary e-mail</h5>
-        <p>not set</p>
-        <h5>Security Question</h5>
-        <p>not set</p>
-    </div>
 </div>
 
 <footer class="lowest-footer text-center">

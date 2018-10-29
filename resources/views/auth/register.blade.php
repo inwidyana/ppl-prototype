@@ -104,7 +104,7 @@
 
                         <div class="form-group row mb-0 justify-content-center">
                             <div class="col-md-6">
-                                <a class="btn btn-link" href="{{ route('register') }}">
+                                <a class="btn btn-link" href="{{ route('Log in') }}">
                                     {{ __('Already have an account? Sign in') }}
                                 </a>
                             </div>

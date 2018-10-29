@@ -28,6 +28,10 @@ Route::get('/budget', 'BudgettingController@create')->name('budget.create');
 Route::post('/budget', 'BudgettingController@store')->name('budget.store');
 
 
+Route::get('/wouldyou', 'CategoryController@wouldyou')->name('category.wouldyou');
+
+Route::get('/dontforget', 'CategoryController@dontforget')->name('category.dontforget');
+
 
 Route::get('/category', 'CategoryController@create')->name('category.create');
 

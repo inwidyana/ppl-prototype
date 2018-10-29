@@ -1,5 +1,5 @@
 html, body{
-    background: url("../1.png") top left no-repeat;
+    background: url("../BACKGROUND CATEGORY.png") top left no-repeat;
     background-size: cover;
 }
 
@@ -24,8 +24,9 @@ nav.navbar div.collapse{
 }
 
 .billboard h1{
-    font-size: 50px;
+    font-size: 45px;
     margin-top: 100px;
+    margin-bottom: 30px;
 }
 
 .billboard input[type="number"]{
@@ -47,11 +48,17 @@ nav.navbar div.collapse{
     font-size: 30px;
     border: 0;
     border-radius: 20px;
-    margin-top: 150px;
+    margin-top: 85px;
+}
+
+div.container div.billboard div.row div.col button.btn.btn-light.btn-lg.btn-block.button-text{
+    font-size: 30px;
+    color: dimgray;
+    border-radius: 30px;
 }
 
 .next-button{
-    height: 280px;
+    height: 220px;
 }
 
 .lowest-footer h1{

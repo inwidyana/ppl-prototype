@@ -35,7 +35,7 @@
 
 <div class="container">
     <div class="billboard">
-       <h1>What is your budget?</h1>
+        <h1>What is your budget?</h1>
         <form method="POST" action="{{ route('budget.store') }}">
             <input type="number" name="budget"><br>
             <input type="radio" name="period"><label style="margin-right: 100px">Daily</label>
@@ -45,8 +45,8 @@
     </div>
 
     <div class="text-right next-button">
-        <button>Back</button>
-        <button type="submit">Next</button>
+        <button><a style="color: dimgray;" href="{{ route('profile') }}">Back</a></button>
+        <button type="submit"><a style="color: dimgray;" href="{{ route('category.wouldyou') }}">Next</a></button>
     </div>
 
 </div>
