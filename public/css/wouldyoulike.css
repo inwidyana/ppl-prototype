@@ -64,6 +64,7 @@ div.container div.billboard button.btn.btn-light.btn-lg.btn-block.button-text{
 }
 
 .lowest-footer h1{
+    margin-top: 260px;
     color: white;
     font-size: 40px;
 }

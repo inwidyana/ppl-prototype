@@ -36,14 +36,14 @@
 <div class="container">
     <div class="billboard">
         <h1>Would you like to budget<div></div>budget each category</h1>
-        <button class="btn btn-light btn-lg btn-block button-text">Yes</button>
-        <button class="btn btn-light btn-lg btn-block button-text">No</button>
+        <button class="btn btn-light btn-lg btn-block button-text"><a style="color: dimgray;" href="{{ route('dontforget.create') }}">No</a></button>
+        <button class="btn btn-light btn-lg btn-block button-text"><a style="color: dimgray;" href="{{ route('category.create') }}">Yes</a></button>
     </div>
 
-    <div class="text-right next-button">
-        <button><a style="color: dimgray;" href="{{ route('budget.create') }}">Back</a></button>
-        <button type="submit"><a style="color: dimgray;" href="{{ route('category.create') }}">Next</a></button>
-    </div>
+    {{--<div class="text-right next-button">--}}
+        {{--<button><a style="color: dimgray;" href="{{ route('budget.create') }}">Back</a></button>--}}
+        {{--<button type="submit"><a style="color: dimgray;" href="{{ route('category.create') }}">Next</a></button>--}}
+    {{--</div>--}}
 
 </div>
 

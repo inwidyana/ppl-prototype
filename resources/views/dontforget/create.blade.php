@@ -41,7 +41,7 @@
     </div>
 
     <div class="text-right next-button">
-        <button><a style="color: dimgray;" href="{{ route('category.create') }}">Back</a></button>
+        <button><a style="color: dimgray;" href="{{ route('wouldyou.create') }}">Back</a></button>
         <button type="submit"><a style="color: dimgray;" href="{{ route('spending.create') }}">Next</a></button>
     </div>
 

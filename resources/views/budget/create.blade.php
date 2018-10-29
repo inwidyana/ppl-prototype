@@ -36,19 +36,22 @@
 <div class="container">
     <div class="billboard">
         <h1>What is your budget?</h1>
-        <form method="POST" action="{{ route('budget.store') }}">
+        <form method="POST" action="{{ route('budget.store') }}" enctype="multipart/form-data">
+            @csrf
+
             <input type="number" name="budget"><br>
-            <input type="radio" name="period"><label style="margin-right: 100px">Daily</label>
-            <input type="radio" name="period"><label style="margin-right: 100px">Weekly</label>
-            <input type="radio" name="period"><label>Monthly</label>
+            <div class="form-group">
+                <input type="radio" name="budgetBy" value="1"><label for="budgetBy" style="margin-right: 100px">Daily</label>
+                <input type="radio" name="budgetBy" value="2"><label for="budgetBy" style="margin-right: 100px">Weekly</label>
+                <input type="radio" name="budgetBy" value="3"><label for="budgetBy">Monthly</label>
+            </div>
+            <div class="text-right next-button">
+                <button><a style="color: dimgray;" href="{{ route('profile') }}">Back</a></button>
+                <button type="submit">>Next</button>
+                {{--<button type="submit"><a style="color: dimgray;" href="{{ route('wouldyou.create') }}">Next</a></button>--}}
+            </div>
         </form>
     </div>
-
-    <div class="text-right next-button">
-        <button><a style="color: dimgray;" href="{{ route('profile') }}">Back</a></button>
-        <button type="submit"><a style="color: dimgray;" href="{{ route('category.wouldyou') }}">Next</a></button>
-    </div>
-
 </div>
 
 <footer class="lowest-footer text-center">

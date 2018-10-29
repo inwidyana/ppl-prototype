@@ -13,14 +13,6 @@ class CategoryController extends Controller
         return view('category.create');
     }
 
-    public function wouldyou(Request $request) {
-        return view('wouldyou.create');
-    }
-
-    public function dontforget(Request $request) {
-        return view('dontforget.create');
-    }
-
     public function store(Request $request) {
         $user = User::find(Auth::id());
 

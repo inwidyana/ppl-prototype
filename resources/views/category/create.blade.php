@@ -62,8 +62,8 @@
     </div>
 
     <div class="text-right next-button">
-        <button><a style="color: dimgray;" href="{{ route('category.wouldyou') }}">Back</a></button>
-        <button type="submit"><a style="color: dimgray;" href="{{ route('category.dontforget') }}">Next</a></button>
+        <button><a style="color: dimgray;" href="{{ route('wouldyou.create') }}">Back</a></button>
+        <button type="submit"><a style="color: dimgray;" href="{{ route('dontforget.create') }}">Next</a></button>
     </div>
 
 </div>
