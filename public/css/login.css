@@ -1,0 +1,42 @@
+html, body{
+    background: url("../1.png") top left no-repeat;
+    background-size: cover;
+}
+
+.login-header {
+color: white;
+}
+
+#signup-nav{
+    border: 2px solid white;
+}
+
+nav.navbar a.navbar-brand{
+    font-size: 40px;
+}
+
+nav.navbar div.collapse{
+    font-size: 30px;
+}
+
+.cover{
+    color: white;
+    margin-top: 160px;
+    height: 650px;
+}
+
+div.cover div.row div.col-sm-6 h1{
+    font-size: 70px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+}
+
+div.cover div.row div.col-sm-6 p{
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: 0.03em;
+}
+
+div.cover div.row div.col-sm-6 p a strong{
+    font-weight: 700;
+}

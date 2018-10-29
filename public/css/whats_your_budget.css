@@ -1,0 +1,60 @@
+html, body{
+    background: url("../1.png") top left no-repeat;
+    background-size: cover;
+}
+
+#signup-nav{
+    border: 2px solid white;
+}
+
+nav.navbar a.navbar-brand{
+    font-size: 40px;
+}
+
+nav.navbar div.collapse{
+    font-size: 30px;
+}
+
+.container{
+    color: white;
+}
+
+.billboard{
+    text-align: center;
+}
+
+.billboard h1{
+    font-size: 50px;
+    margin-top: 100px;
+}
+
+.billboard input[type="number"]{
+    width: 700px;
+    font-size: 60px;
+    border-radius: 20px;
+    border: 0px;
+}
+
+.billboard label{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.next-button button{
+    background: gold;
+    color: dimgray;
+    width: 200px;
+    font-size: 30px;
+    border: 0;
+    border-radius: 20px;
+    margin-top: 150px;
+}
+
+.next-button{
+    height: 280px;
+}
+
+.lowest-footer h1{
+    color: white;
+    font-size: 40px;
+}

@@ -1,0 +1,141 @@
+html, body{
+    background: url("../landing_page_background.png");
+    height: 3650px;
+}
+
+#signup-nav{
+    border: 2px solid white;
+}
+
+nav.navbar a.navbar-brand{
+    font-size: 40px;
+}
+
+nav.navbar div.collapse{
+    font-size: 30px;
+}
+
+.cover-text{
+    color: white;
+    height: 750px;
+}
+
+.cover-text h1{
+    font-size: 57px;
+    letter-spacing: 0.03em;
+    font-weight: 300;
+}
+
+.cover-text h1 strong{
+    font-weight: 700;
+}
+
+.cover-text a{
+    font-size: 40px;
+    background: white;
+    border-radius: 50px;
+    width: 10.5em;
+    letter-spacing: 0.01em;
+    box-shadow: 0 0 20px gray;
+}
+
+.catch-phrase{
+    color: dodgerblue;
+    font-weight: 700;
+}
+
+.why-us h1{
+    color: gray;
+    font-weight: 400;
+}
+
+.why-us{
+    height: 750px;
+}
+
+.testimonies .card{
+    box-shadow: 4px 4px 5px darkgray;
+    height: 500px;
+    /*width: 350px;*/
+}
+
+.testimonies .card .card-img-top{
+    height: 150px;
+    width: 150px;
+    margin: auto;
+}
+
+.testimonies .card .card-body .card-title{
+    font-size: 30px;
+    color: dimgray;
+}
+
+.testimonies .card .card-body{
+    font-size: 23px;
+    color: gray;
+}
+
+.testimonies h1{
+    font-size: 60px;
+    color: dimgray;
+    font-weight: 600;
+    margin-bottom: 100px;
+}
+
+.testimonies a{
+    margin-top: 150px;
+    font-size: 40px;
+    background: white;
+    border-radius: 50px;
+    width: 10.5em;
+    letter-spacing: 0.01em;
+    box-shadow: 0 0 20px gray;
+}
+
+.testimonies{
+    height: 1350px;
+}
+
+.footer-section{
+    color: white;
+}
+
+.footer-section div.row div.col-sm-6 h5{
+    margin: 0;
+    padding: 0;
+    font-size: 35px;
+    font-weight: 600;
+    margin-top: 100px;
+}
+
+.footer-section div.row div.col-sm-6 div.row div.col-sm-6 p{
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+}
+
+.footer-section div.row div.col-sm-6.text-right input{
+    width: 388px;
+    height: 80px;
+    margin: 0;
+}
+
+.footer-section div.row div.col-sm-6.text-right h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.footer-section div.row div.col-sm-6.text-right img{
+    margin-top: 30px;
+    height: 80px;
+    width: auto;
+}
+
+.footer-section{
+    height: 430px;
+}
+
+.lowest-footer{
+    color: white;
+    display: block;
+}

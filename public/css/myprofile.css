@@ -1,0 +1,100 @@
+html, body{
+    background: url("../My Profile Page Background.png");
+    height: 1900px;
+}
+
+#signup-nav{
+    border: 2px solid white;
+}
+
+nav.navbar a.navbar-brand{
+    font-size: 40px;
+}
+
+nav.navbar div.collapse{
+    font-size: 30px;
+}
+
+.cover{
+    color: white;
+    margin-top: 160px;
+    height: 650px;
+}
+
+div.cover div.row div.col-sm-6 h1{
+    font-size: 70px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+}
+
+div.cover div.row div.col-sm-6 p{
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: 0.03em;
+}
+
+div.cover div.row div.col-sm-6 p a strong{
+    font-weight: 700;
+}
+
+.basic-information h1,h5,label{
+    color: dodgerblue;
+    letter-spacing: 0.05em;
+}
+
+.basic-information h1{
+    font-size: 55px;
+    font-weight: 300;
+    margin-bottom: 35px;
+}
+
+.basic-information h5{
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.basic-information label{
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.basic-information p{
+    font-size: 30px;
+    font-weight: 300;
+    color: dimgray;
+}
+
+.basic-information{
+    height: 400px;
+}
+
+.privacy h1,h5{
+    color: dodgerblue;
+    letter-spacing: 0.05em;
+}
+
+.privacy h1{
+    font-size: 55px;
+    font-weight: 300;
+    margin-bottom: 35px;
+}
+
+.privacy h5{
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.privacy p{
+    font-size: 30px;
+    font-weight: 300;
+    color: dimgray;
+}
+
+.privacy{
+    height: 530px;
+}
+
+.lowest-footer h1{
+    color: white;
+    font-size: 40px;
+}
